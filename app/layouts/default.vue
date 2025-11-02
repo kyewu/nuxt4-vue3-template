@@ -1,0 +1,17 @@
+<template>
+  <div>
+    <header>Header</header>
+    <main>
+      <slot></slot>
+    </main>
+    <footer>Footer</footer>
+  </div>
+</template>
+
+<script setup lang="ts">
+
+</script>
+
+<style lang="scss" scoped>
+
+</style>
