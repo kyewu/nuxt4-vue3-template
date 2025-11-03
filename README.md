@@ -1,5 +1,6 @@
 # Nuxt Minimal Starter
 
+Project includes Nuxt4, Vue3, Eslint9, prettier, typescript and Husky.
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
