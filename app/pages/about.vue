@@ -11,12 +11,12 @@
 </template>
 
 <script setup lang="ts">
-import type { Data } from "#shared/types/types"
+import type { Data } from '#shared/types/types'
 const data = ref<Data[]>([])
 
 async function getPosts() {
-  const res = await fetch('/api/posts/list');
-  return res.json();
+  const res = await fetch('/api/posts/list')
+  return res.json()
 }
 
 onMounted(async () => {
@@ -24,6 +24,4 @@ onMounted(async () => {
 })
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

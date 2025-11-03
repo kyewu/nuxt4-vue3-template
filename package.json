@@ -9,7 +9,19 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{js,ts,vue,json,css,md}\"",
+    "format:check": "prettier --check \"**/*.{js,ts,vue,json,css,md}\"",
+    "prepare": "husky install || true"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md,yaml,yml}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@nuxt/icon": "2.1.0",
@@ -27,6 +39,9 @@
     "@nuxt/eslint": "^1.10.0",
     "@unocss/nuxt": "^66.5.4",
     "eslint": "^9.38.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
+    "prettier": "^3.6.2",
     "typescript": "^5.9.3",
     "unocss": "^66.5.4"
   }

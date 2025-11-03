@@ -9,13 +9,11 @@
 </template>
 
 <script setup lang="ts">
-import type { Data } from "#shared/types/types";
+import type { Data } from '#shared/types/types'
 
 const route = useRoute()
-const id = route.params.id;
-const {data} = await useFetch<Data>(`/api/posts/${id}`);
+const id = route.params.id
+const { data } = await useFetch<Data>(`/api/posts/${id}`)
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

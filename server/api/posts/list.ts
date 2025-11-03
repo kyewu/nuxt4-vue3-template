@@ -1,4 +1,4 @@
-import {list} from '../data'
+import { list } from '../data'
 
 export default defineEventHandler(() => {
   return list
